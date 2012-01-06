@@ -38,10 +38,16 @@ for f in `grep "addFunction" $filename | cut -d\" -f2`;do
 		grep "$f" "Data.xml" > /dev/null
 		if [ "$?" -eq 1 ];then
 			echo -e "\e[00;31mMissing!!\e[00m"
+			newfun="$newfun $f"
 		else
 			echo "exist."
 		fi
 	fi
+done
+
+echo "Generating XML for data.xml..."
+for f in $newfun;do
+	echo -e "<Word name=\"$f\" args=\"\">\n</Word>"
 done
 
 # ex: set tabstop=4:
