@@ -1983,6 +1983,51 @@
 		<Word name="llReleaseURL" args="string url"/>
 		<Word name="llHTTPResponse" args="key request_id,integer status,string body"/>
 		<Word name="llGetHTTPHeader" args="key request_id,integer status,string body"/>
+		<Word name="llSound" args="">
+			Note that llSound does do one thing its replacement functions don't cover: the sound position is "attached" to the object as with llPlaySound, but can be triggered several times in succession like llTriggerSound.
+		</Word>
+		<Word name="llSoundPreload" args="key">
+			This is the same function as llPreloadSound. This function is deprecated.
+		</Word>
+		<Word name="llGodLikeRezObject" args="key vector">
+		This function, if you have the god bit set (only Lindens :-P) allows you to rez an object by key (specified by the inventory argument) at region location: pos.
+		</Word>
+		<Word name="llSetPrimURL" args="string url">
+			Updates the URL for the web page shown on the sides of the object.
+			This feature has not yet been implemented.
+		</Word>
+		<Word name="llRefreshPrimURL" args="">
+		Reloads the web page shown on the sides of the object.
+		This feature has not yet been implemented.
+		</Word>
+		<Word name="llSetPrimMediaParams" args="">
+		</Word>
+		<Word name="llGetPrimMediaParams" args="">
+		</Word>
+		<Word name="llClearPrimMedia" args="">
+		</Word>
+		<Word name="llSetLinkPrimitiveParamsFast" args="">
+		</Word>
+		<Word name="llGetLinkPrimitiveParams" args="">
+		</Word>
+		<Word name="llLinkParticleSystem" args="">
+		</Word>
+		<Word name="llSetLinkTextureAnim" args="">
+		</Word>
+		<Word name="llGetLinkNumberOfSides" args="">
+		</Word>
+		<Word name="llGetUsername" args="">
+		</Word>
+		<Word name="llRequestUsername" args="">
+		</Word>
+		<Word name="llGetDisplayName" args="">
+		</Word>
+		<Word name="llRequestDisplayName" args="">
+		</Word>
+		<Word name="llGetEnv" args="">
+		</Word>
+		<Word name="llRegionSayTo" args="">
+		</Word>
 	</Words>
 	<Words  name="Constants" icon="5">
 		To ease scripting,many useful constants are defined by LSL.
